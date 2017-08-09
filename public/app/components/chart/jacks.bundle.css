@@ -1,0 +1,98 @@
+body {
+    font: helvetica;
+    color: black;
+    margin-left: 80px;
+    background: white;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+  margin-left: 80px;
+}
+head {
+  font: helvetica;
+  margin-left: 300px;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 150px; /* 0 width - change this with JavaScript */
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;  /*Place content 60px from the top*/ 
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    line-height: 250%;
+    font: helvetica;
+
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.axis {
+    font: "sans-serif";
+    font-size: 12px;
+}
+.grid--x .tick{
+    stroke: lightgrey;
+    opacity: 0.2;
+}
+.grid--y .tick{
+    stroke: lightgrey;
+    opacity: 0.2;
+}
+
+.grid {
+    padding: 100px;
+}
+
+rect.display {
+    width: 180;
+    height: 60;
+    stroke: black;
+    stroke-width: 1;
+    fill: white;
+}
+path.mouse-line, path.mouse-liney {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.rhombus-copy, path.rhombus
+/*{ display: inline-block; background: url('C:\Users\212628116\Documents\AwesomeInHub\public\app\components\chart\download.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }*/
+ { display: inline-block; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAgCAYAAAAbifjMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVRIie2UTUhUURzFf//77rx5jR+4qDANsU1QkSBUBtVCYoaSoXWL0m0ELYKCXEhEULgpKI1WLSz6ICjQkcq3GGKswF1FFK1cpQRKSI7PeR+3zQy8njPQPu/mLu455/I/99wjxhgarYX8kQFEoh1Ts68bYaSRwNKhg7a3zflslInelFO9TxWe6xb/TSCb7Wfc9i9ZSJ8IyhHedkyV7tTDbRDIZvvVUMp0HZbwwxdR/T3G9xysd5G9vr/z5dxynAxolSQDmQOEIwFmYmxdfd81/X5ehAfip68ncM5fI1QVm69o09NtBU9WqOzrLcz9BljM5TKk1r4azcnBsv4GZIAIqKgY2QFUlxXc3CIM18gA7TMzZSNmhIDbVbKqCgS1ETSgRu0g32TE7piafZw07OH80qNVMVtvpMOBKtlz3SJxD6LtFisooxDZYOyn7rZmDFoMFaBce9K4gLdzslRQkfxayB89kzT2suhBRH4OV6xJ1y1GtXNd3YOaotFclIhXi7nci7PG94DMKeW3tcIwEh133VIUu7R+kH7kj40jLA95ehRQd9P+tRbQnYXZC0ms3sAGVnTlajq0P55Lhc9aI6NaxJwOjdqTxDVMIpC5lQ7PO0R9TcZohXLbp0tjSTJ1kghgA9HzNetes7BXKdndvmrdr4Orm8T4SMGE458AiH/nJK7hd4bNPtjsg80++M/64A8HLqq6SOCZxwAAAABJRU5ErkJggg==') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }*/
+
+.rhombus-copy { background-position: -0px -0px; width: 16px; height: 16px; }
+.rhombus { background-position: -0px -16px; width: 16px; height: 16px; }
+
+/*#container {width:100px; height:25px; border:1px solid green;}
+#container #inner_container {width:6px; height:6px; border:1px solid red; }
+svg {fill:black; float:left}*/

@@ -1,0 +1,8 @@
+---
+applications:
+  - name: ss-maintenance
+    host: ss-maintenance
+    buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git#v1.5.27 # specifying the version so that we make sure we have the version of node we want
+    memory: 2G
+    disk_quota: 2G
+    command: npm start

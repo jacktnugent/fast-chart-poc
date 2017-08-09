@@ -1,0 +1,5 @@
+projectKey=apm-timeseries-microapp
+serverUrl=http://3.39.73.153:9000
+dashboardUrl=http://3.39.73.153:9000/dashboard/index/apm-timeseries-microapp
+ceTaskId=AVmVAiUxRZzR79kYQQPu
+ceTaskUrl=http://3.39.73.153:9000/api/ce/task?id=AVmVAiUxRZzR79kYQQPu

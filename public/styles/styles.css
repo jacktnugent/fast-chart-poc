@@ -1,0 +1,320 @@
+﻿@charset "UTF-8";
+/* TODO: This will be refactored into styles for individual components */
+
+html {
+  font-family: "GE Inspira Sans", Helvetica, Arial, sans-serif;
+  background-color: #3b3b3f;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+*.axis--x path {
+  display: none;
+}
+
+.assets-title {
+  font-family: "GE Inspira Sans", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  margin: 0 auto;
+  color: black;
+}
+.tree-panel {
+  overflow: scroll;
+  background-color: white;
+  color: black;
+  scrollbar-base-color: #F1F1F1;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-track-color: #F1F1F1;
+  scrollbar-arrow-color: #C1C1C1;
+  scrollbar-face-color: #C1C1C1;
+  scrollbar-shadow-color: #C1C1C1;
+  scrollbar-highlight-color: #C1C1C1;
+  scrollbar-dark-shadow-color: #F1F1F1;
+}
+.scroll-body.aha-table {
+  scrollbar-base-color: #F1F1F1;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-track-color: #F1F1F1;
+  scrollbar-arrow-color: #C1C1C1;
+  scrollbar-face-color: #C1C1C1;
+  scrollbar-shadow-color: #C1C1C1;
+  scrollbar-highlight-color: #C1C1C1;
+  scrollbar-dark-shadow-color: #F1F1F1;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main] {
+  scrollbar-base-color: #F1F1F1;
+  scrollbar-3dlight-color: #C0C0C0;
+  scrollbar-track-color: #F1F1F1;
+  scrollbar-arrow-color: #C1C1C1;
+  scrollbar-face-color: #C1C1C1;
+  scrollbar-shadow-color: #C1C1C1;
+  scrollbar-highlight-color: #C1C1C1;
+  scrollbar-dark-shadow-color: #F1F1F1;
+}
+.tree-panel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.tree-panel::-webkit-scrollbar-button {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+}
+.tree-panel::-webkit-scrollbar-track {
+  background-color: #F1F1F1;
+}
+.tree-panel::-webkit-scrollbar-track-piece {
+  background-color: #F1F1F1;
+}
+.tree-panel::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #C1C1C1;
+  border-radius: 3px;
+}
+.tree-panel::-webkit-scrollbar-corner {
+  background-color: #F1F1F1;
+}
+.tree-panel::-webkit-resizer {
+  background-color: #666;
+}
+.scroll-body.aha-table::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-body.aha-table::-webkit-scrollbar-button {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+}
+.scroll-body.aha-table::-webkit-scrollbar-track {
+  background-color: #F1F1F1;
+}
+.scroll-body.aha-table::-webkit-scrollbar-track-piece {
+  background-color: #F1F1F1;
+}
+.scroll-body.aha-table::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #C1C1C1;
+  border-radius: 3px;
+}
+.scroll-body.aha-table::-webkit-scrollbar-corner {
+  background-color: #F1F1F1;
+}
+.scroll-body.aha-table::-webkit-resizer {
+  background-color: #666;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-scrollbar-button {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-scrollbar-track {
+  background-color: #F1F1F1;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-scrollbar-track-piece {
+  background-color: #F1F1F1;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #C1C1C1;
+  border-radius: 3px;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-scrollbar-corner {
+  background-color: #F1F1F1;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main]::-webkit-resizer {
+  background-color: #666;
+}
+px-data-table > * px-dropdown {
+  min-width: 200px;
+  width: 15%;
+}
+px-data-table > * px-dropdown > px-dropdown-content > div.px-dropdown-content {
+  width: 100% !important;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel {
+  height: 100%;
+  background-color: #FFFFFF;
+}
+iron-selector.paper-drawer-panel > #main.paper-drawer-panel > [main] {
+  overflow-y: scroll;
+}
+.content-panel {
+  overflow: hidden;
+  background-color: white;
+}
+/* Paper toolbar */
+
+.title-toolbar {
+  background-color: white;
+}
+/* Make the side panel scroll separately */
+
+#item-explorer {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+/* Make the main view scroll separately */
+
+#detail-view {
+  overflow-y: scroll;
+}
+/* Angular 2 tree component */
+
+.tree {
+  /* Ideally can find a way to automatically adjust width. As it is, it is limiting to ~600px. */
+
+  width: 1000px;
+}
+/* Tree background and text colors */
+
+.tree-colors {
+  background-color: rgb(255, 255, 255);
+  color: black!important;
+}
+/* Tree node hover color */
+
+.node-content-wrapper:hover {
+  background-color: #c0c0c0!important;
+}
+/* Tree node selected color */
+
+.tree-node-active.tree-node-focused > .node-content-wrapper:not([style-scope]):not(.style-scope) {
+  background-color: rgb(10, 158, 193)!important;
+}
+/* Expand children triangle of angular tree
+   There was no way to change the color of the triangle, so a custom base-64 encoded image of a white, right facing triangle is used.
+ */
+
+.toggle-children {
+  background-image: url(../images/tree-expand.png);
+  height: 7px!important;
+  width: 9px!important;
+}
+/* Menu bar of json editor */
+
+div.jsoneditor-menu {
+  background-color: #3b3b3f!important;
+}
+/* The following properties are used for fade-in/out transitions */
+
+.make-white {
+  color: white
+}
+.make-green {
+  color: green
+}
+.view-container {
+  position: relative;
+}
+show-content,
+hide-content {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.show-content {
+  animation: .5s fade-in;
+  z-index: 100;
+}
+.hide-content {
+  animation: 0.2s fade-out;
+  z-index: 99;
+  opacity: 0;
+}
+#model-invalid-indicator {
+  color: darkorange;
+}
+.iron-icon {
+  color: #505050;
+}
+.error-icon-color {
+  color: #e53838;
+}
+.success-icon-color {
+  color: #46ad00;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-item {
+  padding: 5px;
+}
+
+.show {
+  opacity: 1 !important;
+}
+.step {
+  opacity: 0;
+  transition: .3s ease-in-out all;
+}
+.long-step {
+  opacity: 0;
+  transition: .8s ease-in-out all;
+}
+#dropcell {
+    height: 2em !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}

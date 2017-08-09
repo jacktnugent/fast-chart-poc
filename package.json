@@ -1,0 +1,38 @@
+{
+  "name": "ss-maintenance-microapp",
+  "version": "2.7.0",
+  "private": true,
+  "main": "server/start-server.js",
+  "scripts": {
+    "start": "node ./server/start-server.js",
+    "postinstall": "cd public && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.build.ge.com/SmartSignal/ss-maintenance-microapp.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "helmet": "^3.4.0",
+    "morgan": "^1.8.1",
+    "request": "^2.79.0",
+    "typescript": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "0.0.33",
+    "@types/compression": "0.0.33",
+    "@types/express": "^4.0.34",
+    "@types/helmet": "0.0.33",
+    "@types/morgan": "^1.7.32",
+    "@types/node": "^6.0.58",
+    "@types/request": "0.0.39",
+    "file-loader": "^0.11.2",
+    "tslint": "^3.15.1",
+    "url-loader": "^0.5.9"
+  },
+  "engines": {
+    "node": "7.4.0"
+  }
+}
